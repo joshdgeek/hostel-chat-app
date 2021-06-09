@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/chat.css">
+    <script src="http://localhost:8080/socket.io/socket.io.js" defer></script>
+    <script src="./script/thepack.js" type="module" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="title"><h3 align="center"> The Pack </h3></div>
+
+        <div id="boys-message"></div>
+
+        <div id="input">
+            <form>
+                <input type="text" id="message-input" autocomplete="off">
+                <button type="submit"><h3>send</h3></button>
+            </form>
+        </div>  
+    </div>
+
+</body>
+</html>

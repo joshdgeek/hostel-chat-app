@@ -1,0 +1,10 @@
+{
+    "name":"chat-app",
+    "short_name": "chat App",
+    "start_url":"./index.html",
+    "display": "standalone",
+    "theme_color":"#fafafa",
+    "background_color" : "#ffE1c4",
+    "orientation"  : "portrait-primary",
+    "icons":[]
+}

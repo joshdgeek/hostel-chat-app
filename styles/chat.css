@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    min-width: 100vw;
+}
+
+#container{
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    background-color: rgba(4, 1, 15, 0.938);
+}
+
+#title{
+    color: white;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    min-height: 30px;
+    width: 100%;
+    background-color: rgb(41, 139, 219);
+    padding: 8px;
+    position: sticky;
+    top: 0%;
+    z-index: 12;
+}
+
+br{
+    background-color: white;
+    width: 100vw;
+    min-height: 4px;
+}
+
+#feedback{
+    position: sticky;
+    top: 47px;
+    font-style: italic;
+    min-height: 20px;
+    display: grid;
+    place-items: center;
+    color:orange;
+    font-size: 15px;
+}
+
+
+#input{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 8px 0px;
+}
+
+input{
+    display: inline-block;
+    height:35px;
+    width: 60%;
+    margin:0px 4px;
+    background-color: rgba(128, 128, 128, 0.9);
+    color: white;
+    font-size: 20px;
+    padding:5px;
+    border-radius: 7px;
+}
+button{
+    display: inline-block;
+    height:35px;
+    width: 35%;
+    margin:0px;
+}
+
+#boys-message{
+    min-height:100vh;
+    padding: 5px 5px 40px 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: relative;
+}
+
+.usersName{
+    display: inline-block;
+    color: red;
+}
+.message-cont{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+
+
+.message{
+    margin: 0.7rem 0px;
+    min-height:30px;
+    padding: 8px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    background-color: rgb(92, 87, 87);
+    color:white;
+    border-radius: 8px;
+    min-width: 100px;
+    max-width: 50%;
+    right: 0px;
+    word-wrap: break-word;
+}
+
+
+.senders-message{
+    background-color: rgb(41, 139, 219);
+    margin: 0.7rem 0px;
+    min-height:30px;
+    margin-bottom: 40.5px;
+    padding: 5px;
+    font-weight: 700;
+    border-radius: 8px;
+    font-size: 21px;
+    right:0px;
+    max-width: 50%;
+    word-wrap: break-word;
+}
+.senders-message h4{
+    color:rgba(109, 0, 64, 0.76);
+}
+
+.closed{
+    height:100%;
+    background-color: rgba(17, 8, 8, 0.54);
+    color:white;
+    position: absolute;
+    top: 0%;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: come-down 2s ease-in-out;
+}
+
+@keyframes come-down{
+    from{
+        height: 0vh;
+    }
+    to {
+        height: 100vh;
+    }
+}

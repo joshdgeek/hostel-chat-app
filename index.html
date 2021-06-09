@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="http://localhost:8080/socket.io/socket.io.js" defer></script>
+    <script src="./script/script.js" defer type="module"></script>
+    <script src="./script/app.js" defer></script>
+    
+</head>
+<body>
+    <div id="container">
+
+        <!--title-->
+        <div id="title">
+            <div id="name">
+               <h1 align="center">Hostel Room Chat</h1>
+            </div>
+        </div>
+
+        <!--rooms section below-->
+        <div id="roomsContainer">
+            <div id="center-div">
+                <div id="intro">
+                    <h2 style="color:skyblue">WELCOME</h2>
+                    <h3 style="display: inline-block;">share ideas, rub minds, catch</h3>
+                    <span> cruise</span>
+                </div>
+    
+                <div id="input-field">
+                    <div class="input"><h3>Username: </h3> <input type="text"/></div>
+                    <div class="input">
+                        <h3>Gender</h3>
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+    
+                    <div id="rooms">
+                        <div class="child-rooms"><h3>The Boys</h3></div>
+                        <div class="child-rooms"><h3>The Cheezy</h3></div>
+                        <div class="child-rooms"><h3>The whole Geng</h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h2 align="center">joshdgeek</h2>
+        </footer>
+            
+    </div>
+</body>
+</script>
+</html>
